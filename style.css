@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    width: 500px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.header{
+    background: rgb(61,211,174);
+background: linear-gradient(90deg, rgba(61,211,174,1) 0%, rgba(60,211,173,1) 100%);
+padding-top: 40px;
+padding-bottom: 50px;
+
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 44px;
+        margin-bottom: 20px;
+        
+        
+    }
+    .search{
+        display: flex;
+        width: 460px;
+        input{
+            padding: 15px;
+            flex-grow: 1;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+        }
+        button{
+            padding: 15px 26px;
+            border: none;
+            background-color: #ed3052;
+            color: white;
+            font-weight: 600;
+            margin-left: -10px;
+            border-radius: 6px;
+        }
+    }
+}
+.card{
+    width: 360px;
+    margin: auto;
+    box-shadow: 0px 5px 20px 0px #1B6C7240;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    h2{
+        font-size: 84px;
+        span{
+            font-size: 33px;
+            vertical-align: top;
+        }
+    }
+    h3{
+        font-size: 31px;
+      
+     
+    }
+    p{
+        margin: 15px 0;
+    }
+}
+.sun{
+    width: 200px;
+margin: auto;
+margin-left: 170px;
+margin-top: 30px;
+
+}
+.s1{
+    margin-right: 5px;
+   
+}
+img{
+    
+    display: none;
+ 
+}
+.con{
+    background-color: #ed3052;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    color: white;
+   border-radius: 5px;
+  padding-top: 7px;
+  padding-left: 2px;
+   position: absolute;
+}
+.rs{
+    margin-right: 10px;
+}
+.card1{
+    width: 315px;
+    height: 13px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -10px;
+left: 20px;
+border-radius: 6px;
+z-index: -1;
+
+}
+@media (max-width: 425px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header {
+        padding-top: 10px;
+        padding-bottom: 20px;
+      
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+
+    .search {
+        max-width: 100%;
+    }
+
+    button {
+        padding: 10px 16px;
+        margin-left: 8px;
+    }
+
+    .card {
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 36px; 
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        margin: 8px 0; 
+    }
+}
+
